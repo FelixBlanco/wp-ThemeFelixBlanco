@@ -32,7 +32,7 @@
 			<div class="col-md-6">
 				<!-- Encabezado general -->
 				<div id="titulo_index">
-					<a href="">
+					<a href="<?php bloginfo('url'); ?>">
 						<h1 class="text-center">
 						<img src="<?php bloginfo('stylesheet_directory') ?>/img/logoFB.png" class="img-responsive center-block" alt="Logo Oficial Felix Blanco" width="90" style="display: inline-block;">
 							<span class="TipoLetra">F</span>élix <span class="TipoLetra">B</span>lanco
@@ -44,18 +44,18 @@
 				<!-- Menu general -->
 				<div class="menu_general">
 					<ul class="list-inline text-center">
-					<li><a href="">
-						<h3><span class="lnr lnr-home"></span>Inicio</h3>
-								</a></li>
-							<li><a href="">
-									<h3><span class="lnr lnr-briefcase"></span>Portafolio</h3>
-								</a></li>
-							<li><a href="">
-									<h3><span class="lnr lnr-star-half"></span>Yo</h3>
-								</a></li>
-							<!-- <li><a href="">
-									<h3><span class="lnr lnr-laptop-phone"></span>Planes Web</h3>
-								</a></li> -->
+						<li><a href="<?php bloginfo('url'); ?>">
+							<h3><span class="lnr lnr-home"></span>Inicio</h3>
+									</a></li>
+								<li><a href="<?php bloginfo('url'); ?>/yo">
+										<h3><span class="lnr lnr-briefcase"></span>Portafolio</h3>
+									</a></li>
+								<li><a href="<?php bloginfo('url'); ?>/yo">
+										<h3><span class="lnr lnr-star-half"></span>Yo</h3>
+									</a></li>
+								<!-- <li><a href="">
+										<h3><span class="lnr lnr-laptop-phone"></span>Planes Web</h3>
+									</a></li> -->
 					</ul>
 				</div>
 			</div>

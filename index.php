@@ -7,7 +7,9 @@
 	 <link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory') ?>/img/logo-ico32x32.ico" />
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+	
+	<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    
     <!-- Meta datos para el SEO -->
     <meta name="description" content="Felix Blanco, Desarrollo & Mantenimiento Web, Planes web, Blog, programacion y diseños de aplicaciones.">
 	<meta name="keywords" content="Blog,CSS,HTML,JavaScript,Felix Blanco, Blog Felix Blanco,laravel,php,bootstrap, Historia Felix Blanco">
@@ -32,11 +34,11 @@
 			<div class="col-md-11 text-right">
 				<div class="paddin10">
 					<ul class="list-inline">
-						<li><a href=""><img src="<?php bloginfo('stylesheet_directory') ?>/img/RedesSocial/1446050680_github.png" class="img-responsive center-block" alt="Redes Sociales de Felix Blanco" width="45"></a></li>
-						<li><a href=""><img src="<?php bloginfo('stylesheet_directory') ?>/img/RedesSocial/1446050682_linkedin.png" class="img-responsive center-block" alt="Redes Sociales de Felix Blanco" width="45"></a></li>
-						<li><a href=""><img src="<?php bloginfo('stylesheet_directory') ?>/img/RedesSocial/1446050683_youtube.png" class="img-responsive center-block" alt="Redes Sociales de Felix Blanco" width="45"></a></li>
-						<li><a href=""><img src="<?php bloginfo('stylesheet_directory') ?>/img/RedesSocial/1446050688_facebook.png" class="img-responsive center-block" alt="Redes Sociales de Felix Blanco" width="45"></a></li>
-						<li><a href=""><img src="<?php bloginfo('stylesheet_directory') ?>/img/RedesSocial/1446050693_twitter.png" class="img-responsive center-block" alt="Redes Sociales de Felix Blanco" width="45"></a></li>
+						<li><a target="_blank" href="https://github.com/FelixBlanco"><img src="<?php bloginfo('stylesheet_directory' );?>/img/RedesSocial/1446050680_github.png" class="img-responsive center-block" alt="Redes Sociales de Felix Blanco" width="45"></a></li>
+						<li><a target="_blank" href="https://www.linkedin.com/in/felix-blanco-54488684/"><img src="<?php bloginfo('stylesheet_directory' );?>/img/RedesSocial/1446050682_linkedin.png" class="img-responsive center-block" alt="Redes Sociales de Felix Blanco" width="45"></a></li>
+						<li><a target="_blank" href="https://www.youtube.com/channel/UCfMpmLlmj4kN5YP7aeAtidw"><img src="<?php bloginfo('stylesheet_directory' );?>/img/RedesSocial/1446050683_youtube.png" class="img-responsive center-block" alt="Redes Sociales de Felix Blanco" width="45"></a></li>
+						<li><a target="_blank" href="https://www.facebook.com/FelixBlancoWeb"><img src="<?php bloginfo('stylesheet_directory' );?>/img/RedesSocial/1446050688_facebook.png" class="img-responsive center-block" alt="Redes Sociales de Felix Blanco" width="45"></a></li>
+						<li><a target="_blank" href="https://twitter.com/felixan9292"><img src="<?php bloginfo('stylesheet_directory' );?>/img/RedesSocial/1446050693_twitter.png" class="img-responsive center-block" alt="Redes Sociales de Felix Blanco" width="45"></a></li>
 					</ul>
 				</div>
 			</div>
@@ -46,7 +48,7 @@
 			<div class="col-md-12">
 				<!-- Encabezado Principal -->
 				<div id="titulo_index">
-					<a href="">
+					<a href="<?php bloginfo('url'); ?>">
 						<img src="<?php bloginfo('stylesheet_directory') ?>/img/logoFB.png" class="img-responsive center-block" alt="Logo Oficial Felix Blanco" width="200">
 						<h1 class="text-center">
 							<span class="TipoLetra">F</span>élix <span class="TipoLetra">B</span>lanco
@@ -56,15 +58,18 @@
 				<!-- Menu Index -->
 				<div class="menu_index">
 					<ul class="list-inline text-center">
-						<li><a href="">
-								<h3>Inicio</h3>
-							</a></li>
-						<li><a href="">
-								<h3>Portafolio</h3>
-							</a></li>
-						<li><a href="">
-								<h3>Yo</h3>
-							</a></li>
+						<li><a href="<?php bloginfo('url'); ?>">
+							<h3><span class="lnr lnr-home"></span>Inicio</h3>
+									</a></li>
+								<li><a href="<?php bloginfo('url'); ?>/yo">
+										<h3><span class="lnr lnr-briefcase"></span>Portafolio</h3>
+									</a></li>
+								<li><a href="<?php bloginfo('url'); ?>/yo">
+										<h3><span class="lnr lnr-star-half"></span>Yo</h3>
+									</a></li>
+								<!-- <li><a href="">
+										<h3><span class="lnr lnr-laptop-phone"></span>Planes Web</h3>
+									</a></li> -->
 					</ul>
 				</div>
 			</div>

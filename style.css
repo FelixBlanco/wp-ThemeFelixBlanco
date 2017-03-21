@@ -90,3 +90,9 @@ a:hover{
 	list-style: none;
 	padding: 6px;
 }
+
+
+.articulo-single p{
+	font-size: 18px; 
+	padding: 10px;
+}
