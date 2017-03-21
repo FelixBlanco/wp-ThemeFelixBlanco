@@ -1,0 +1,92 @@
+/*
+Theme Name: Félix Blanco
+Theme URI: https://felixblanco.com.ve/
+Author: Félix Blanco
+Author URI: https://felixblanco.com.ve/
+Description: Tema desarrollado el mes 03 del 2017, con el objetivo de mi blog personal
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: blog, two-columns, left-sidebar, accessibility-ready, custom-background, custom-colors, custom-header, custom-logo, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+*/
+
+@import url('https://fonts.googleapis.com/css?family=ABeeZee|Atomic+Age');
+
+*{
+	font-family: 'ABeeZee', sans-serif;
+}
+
+/*
+	Predefinido
+*/
+a{
+	color: #004799;
+}
+a:hover{
+	text-decoration: none;
+	color: #004799;
+}
+
+.paddin10{
+	padding: 10px;
+}
+.TipoLetra{
+	font-family: 'Atomic Age', cursive;
+}
+.espacio_list li{
+	list-style: none;
+	padding: 8px; 
+}
+/*Encabezado principal Index*/
+#titulo_index a,h1{
+	color: black;
+	text-decoration: none;
+}
+
+/*Menu principal index*/
+
+.menu_index{
+	margin-bottom: 2%;
+	margin-top: 2%;
+}
+.menu_index a{
+	color: black;
+}
+	.menu_index a:hover{
+		color:#004799;
+	}
+
+.menu_index li{
+	padding-right: 2%;
+	padding-left: 2%;
+}
+
+/*General*/
+.menu_general{
+	padding-top:30px;
+}
+.menu_general a{
+	color: black;
+}
+	.menu_general a:hover{
+		color:#004799;
+	}
+.menu_general li{
+	padding-right: 2%;
+	padding-left: 2%;
+}
+
+
+/* Articulo inicio (index) */
+.articulo_index{
+	margin-bottom: 2%;
+}
+.articulo_index a{
+	color: black;
+}
+
+
+.entradas-reciente a,li,ul{
+	font-size: 20px;
+	list-style: none;
+	padding: 6px;
+}
