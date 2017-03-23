@@ -5,7 +5,20 @@
 		<div class="col-md-8">
 		<?php if (have_posts()) : ?>
 			<?php while (have_posts()) : the_post();?>
+	
+				<?php 
+					// Ruta de la imagen destacada (tamaño completo)
+					global $post;
+					$thumbID = get_post_thumbnail_id( $post->ID );
+					$imgDestacada = wp_get_attachment_url( $thumbID );
+				?>
 
+				<!-- Meta para post -->
+				<meta property="og:title" content="<?php the_title(); ?>"/>
+				<meta property="og:description" content="<?php echo $imgDestacada; ?>"/>
+				<meta property="og:description" content="<?php the_excerpt(); ?>"/>
+				<meta property="og:url" content="<?php the_permalink(); ?>"/>
+				
 				<?php the_post_thumbnail(" medium_large",[ 'class' => 'img-responsive center-block img-thumbnail'] ); ?>
 
 				<h2><?php the_title(); ?></h2>
