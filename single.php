@@ -60,7 +60,20 @@
 					<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 
 				</div>
-			
+				<div style="padding: 10px;" class="text-center">
+					<!-- Comentario de Facebook -->
+					<div id="fb-root"></div>
+					<script>(function(d, s, id) {
+					  var js, fjs = d.getElementsByTagName(s)[0];
+					  if (d.getElementById(id)) return;
+					  js = d.createElement(s); js.id = id;
+					  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.8&appId=318241861846686";
+					  fjs.parentNode.insertBefore(js, fjs);
+					}(document, 'script', 'facebook-jssdk'));</script>
+
+					<div class="fb-comments" data-href="<?php the_permalink(); ?>" data-numposts="5"></div>
+
+				</div>
 			<?php endwhile; ?>
 
 			<?php else : ?>
@@ -70,6 +83,17 @@
 		</div>
 		<div class="col-md-4">
 			<?php dynamic_sidebar("slidebar_uno" ); ?>
+			<div style="padding: 10px;">
+				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+				<!-- cuadro blog -->
+				<ins class="adsbygoogle"
+				     style="display:inline-block;width:336px;height:280px"
+				     data-ad-client="ca-pub-8885363887400217"
+				     data-ad-slot="2225321486"></ins>
+				<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+			</div>
 		</div>
 	</div>
 <?php get_footer(); ?>
