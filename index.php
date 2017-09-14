@@ -61,6 +61,9 @@
 						<li><a href="<?php bloginfo('url'); ?>">
 							<h3><span class="lnr lnr-home"></span>Inicio</h3>
 									</a></li>
+							<li><a href="<?php bloginfo('url'); ?>/articulos/">
+								<h3><span class="lnr lnr-pencil"></span>Articulos</h3>
+							</a></li>
 								<li><a href="<?php bloginfo('url'); ?>/yo">
 										<h3><span class="lnr lnr-briefcase"></span>Portafolio</h3>
 									</a></li>
@@ -80,11 +83,10 @@
 
 	<!-- Post inicio -->
 	<div class="container">
-		<?php if (have_posts()) : ?>
+		<div class="row">
+		<?php query_posts(' posts_per_page=4' );  if (have_posts()) : ?>
 			<?php while (have_posts()) : the_post();?>
-				
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 articulo_index">
+					<div class="col-md-6 articulo_index">
 						
 						<a href="<?php the_permalink(); ?>">
 							<?php the_post_thumbnail(" medium_large",[ 'class' => 'img-responsive center-block img-thumbnail'] ); ?>
@@ -110,13 +112,177 @@
 							</a>
 						</div>
 					</div>
-				</div>
+				
 
 			<?php endwhile; ?>
+			</div>
 		<?php else : ?>
 		  <h2 class="center">No se encontro nada</h2>
 		  <p class="center"><?php _e("Lo sentimo, si quiere saber mas comunicarse a felixablancoe@gmail.com"); ?></p>
 		<?php endif; ?>
 	</div>
+
+
+<div class="container-fluid" style="background-color:  #141E66; color:white; padding-top: 20px; padding-bottom: 20px; ">
+	<div class="form-group">
+		<h2>Habilidades & Conocimientos</h2>
+	</div>
+	<div class="row">
+		<div class="col-md-3">
+			<h3># Generales</h3>
+			<div class="progress">
+				<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 98%;">
+					HTML 98%
+				</div>
+			</div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 90%;">
+					Css 90%
+				</div>
+			</div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 92%;">
+					Javascript 92%
+				</div>
+			</div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 95%;">
+					Ajax 95%
+				</div>
+			</div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 98%;">
+					Json  98%
+				</div>
+			</div>			 			
+		</div>
+		<div class="col-md-3">
+			<h3># Lenguajes</h3>
+			<div class="progress">
+				<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 90%;">
+					PHP 90%
+				</div>
+			</div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 90%;">
+					Python 90%
+				</div>
+			</div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 90%;">
+					Bash 90%
+				</div>
+			</div> 
+		</div>
+		<div class="col-md-3">
+			<h3># Frameword Css</h3>
+			<div class="progress">
+				<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 99%;">
+					Bootstrap 99%
+				</div>
+			</div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 99%;">
+					Fondation 99%
+				</div>
+			</div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 95%;">
+					Bulma 95%
+				</div>
+			</div> 
+		</div>
+		<div class="col-md-3">
+			<h3># Frameword & Libreria Js</h3>
+			<div class="progress">
+				<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 95%;">
+					Jquery 95%
+				</div>
+			</div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 85%;">
+					VueJs 85%
+				</div>
+			</div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 85%;">
+					Angular 85%
+				</div>
+			</div> 
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-3">
+			<h3># Control de Versiones</h3>
+			<div class="progress">
+				<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 85%;">
+					Git 85%
+				</div>
+			</div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 85%;">
+					Github 85%
+				</div>
+			</div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 85%;">
+					Gitlab 85%
+				</div>
+			</div>		 			
+		</div>
+		<div class="col-md-3">
+			<h3># Frameword Backend</h3>
+			<div class="progress">
+				<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 90%;">
+					Laravel 90%
+				</div>
+			</div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 60%;">
+					Django 60%
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<h3># Gestor de Base datos</h3>
+			<div class="progress">
+				<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 98%;">
+					Mysql 98%
+				</div>
+			</div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 98%;">
+					PostgreSql 98%
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<h3># CMS & E commerce</h3>
+			<div class="progress">
+				<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 98%;">
+					Wordpress 98%
+				</div>
+			</div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 98%;">
+					Woocommerce 98%
+				</div>
+			</div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 98%;">
+					Magneto 98%
+				</div>
+			</div>		 			
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid" style="background-color:  #42B332; color: white;  padding-top: 15px;  padding-bottom: 15px;">
+	<div class="row">
+		<div class="col-md-12">
+			<h2 class="text-center">Para Contrataciones  <b>felixablancoe@gmail.com</b></h2>
+		</div>
+	</div>
+</div>
 
 <?php get_footer(); ?>
