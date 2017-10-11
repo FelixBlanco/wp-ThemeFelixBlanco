@@ -15,10 +15,9 @@
 
 				<!-- Meta para post -->
 				<meta property="og:title" content="<?php the_title(); ?>"/>
-				<meta property="og:description" content="<?php echo $imgDestacada; ?>"/>
 				<meta property="og:description" content="<?php the_excerpt(); ?>"/>
 				<meta property="og:url" content="<?php the_permalink(); ?>"/>
-				
+				<?php $Resul = the_excerpt(); ?>
 				<?php the_post_thumbnail(" medium_large",[ 'class' => 'img-responsive center-block img-thumbnail'] ); ?>
 
 				<h2><?php the_title(); ?></h2>

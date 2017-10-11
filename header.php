@@ -4,14 +4,14 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Félix Blanco - Desarrollo & Mantenimiento Web</title>
-	 <link rel="shortcut icon" href="<?php bloginfo('template_url') ?>/img/logo-ico32x32.ico" />
+	<title><?php the_title(); ?> - de Félix Blanco </title>
+
+	<link rel="shortcut icon" type="image/x-icon" href="<?php bloginfo('template_url') ?>/img/favicon.ico">
+	
 	<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
 
-	<!-- Meta datos para el SEO -->
-	<meta name="description" content="Felix Blanco, Desarrollo & Mantenimiento Web, Planes web, Blog, programacion y diseños de aplicaciones.">
-	<meta name="keywords" content="Blog,CSS,HTML,JavaScript,Felix Blanco, Blog Felix Blanco,laravel,php,bootstrap, Historia Felix Blanco">
 	<meta name="author" content="Felix Blanco">
+
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- Latest compiled and minified CSS -->

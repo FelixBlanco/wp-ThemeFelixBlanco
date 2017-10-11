@@ -2,18 +2,23 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-    <title>Félix Blanco - Desarrollo & Mantenimiento Web</title>
-	
-	 <link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory') ?>/img/logo-ico32x32.ico" />
+
+    <title> Félix Blanco - Desarrollo & Mantenimiento Web</title>
+
+
+	<link rel="shortcut icon" type="image/x-icon" href="<?php bloginfo('template_url') ?>/img/favicon.ico">
+
+	 <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 	<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
     
     <!-- Meta datos para el SEO -->
-    <meta name="description" content="Felix Blanco, Desarrollo & Mantenimiento Web, Planes web, Blog, programacion y diseños de aplicaciones.">
-	<meta name="keywords" content="Blog,CSS,HTML,JavaScript,Felix Blanco, Blog Felix Blanco,laravel,php,bootstrap, Historia Felix Blanco">
+    <meta name="description" content="Soy Félix Blanco, Desarrollador web y me encanta comprar mis conocimientos, asi contruiremos una mejor Internet">
+	<meta name="keywords" content="Blog Felix Blanco, Laravel, VueJs, Consejos Programacion, css, consejos generales">
 	<meta name="author" content="Felix Blanco">
+	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- Latest compiled and minified CSS -->
@@ -99,12 +104,6 @@
 						<div class="paddin10">
 							<time><span class="lnr lnr-calendar-full"></span> <?php the_time('F j, Y'); ?></time> || <span class="lnr lnr-tag"></span> <span><?php the_category( "," ); ?></span>
 						</div>
-						
-						<a href="<?php the_permalink(); ?>">
-							<p class="text-justify">
-								<?php the_excerpt(); ?>
-							</p>
-						</a>
 
 						<div class="pie_articulo">
 							<a href=" <?php the_permalink(); ?>">
